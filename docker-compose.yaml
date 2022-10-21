@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cerebro:
+    image: lmenezes/cerebro:latest
+    container_name: cerebro
+    restart: unless-stopped
+    ports:
+       - 8000:9000
